@@ -62,11 +62,7 @@ input{
     display: flex;
     gap: 70px;
 }
-.get-user-info input{
-    border-radius: 3px;
-    border: unset;
-    border: 2px solid rgb(202, 202, 202);
-}
+
 .line{
     display: flex;
     flex-direction: column;
@@ -94,9 +90,13 @@ button{
     box-shadow: 4px 5px 10px 0px rgb(206, 206, 206);
     cursor: pointer;
 }
-input:valid{
-    border-color: green;
+.line > input{
+    border-radius: 3px;
+    border: 2px solid rgb(202, 202, 202);
 }
-input:invalid{
-    border-color: red;
+
+.line > input:focus{
+    border-color: rgb(38, 0, 255);
+    outline: none;
+    box-shadow: 1px 2px 3px 1px rgb(180, 180, 180);
 }
